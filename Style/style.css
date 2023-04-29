@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: comic sans ms;
+}
+
+#form {
+    background-image: linear-gradient(-45deg, #01212d 50%, #00292d 50%);
+    height: 350px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 130px #b6b6b6,
+        -5px -5px 130px #b6b6b6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inputs {
+    width: 100%;
+    margin: 30px 0 40px 0;
+}
+
+.input {
+    background-color: #fff;
+    opacity: 0.5;
+    height: 50px;
+    width: 70%;
+    margin: 15px 0 15px 13%;
+    border-radius: 0 50px 50px 0;
+    padding-left: 50px;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    display: block;
+    background-color: #fff;
+    border-radius: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    color: #02292e;
+    position: absolute;
+    z-index: 99;
+    margin: 15px 0 15px 35px;
+}
+
+#login {
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 3px;
+    cursor: pointer;
+    transition:all .3s;
+}
+
+#login:hover {
+    opacity: .5;
+}
+
+.left{
+    margin-left: 300px;
+}
+
+.right{
+    margin-right: 300px;
+}
+.error{
+    color: #fff;
+    margin: 0 0 0 15%;
+    font-size: 17px;
+    display: flex;
+}
+
+.error>p{
+    margin-left: 6px;
+}
