@@ -5,16 +5,17 @@ const error = $.querySelectorAll('.error-text')
 let isOkFlag = false;
 
 inputs.forEach((element, index) => {
-    element.addEventListener('keydown', e => {
+    element.addEventListener('keyup', e => {
         if (e.target.value.length > 7) {
             error[index].innerHTML = "it's ok"
             error[index].style.color = "green"
         } else {
             error[index].innerHTML = "input should have 8 letters"
-            error[index].style.color = "red"           
+            error[index].style.color = "red" 
+            isOkFlag = false;          
         }
 
-        if (inputs[0].value.length > 6 && inputs[1].value.length > 6) {
+        if (inputs[0].value.length > 7 && inputs[1].value.length > 7) {
             loginButton.className = ""   
             isOkFlag = true;
         }
